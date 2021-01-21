@@ -76,7 +76,7 @@ def receive():
             password = client.recv(1024).decode('ascii')
 
 
-            \\ Feel Free to change password
+            # Feel Free to change password
             if password != 'adminpass':
                 client.send("REFUSE".encode('ascii'))
                 client.close()
